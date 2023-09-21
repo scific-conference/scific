@@ -49,11 +49,9 @@ html {
 }
 
 /* Buttons */
-.white-button {
-    text-align: center; /* Выравниваем текст кнопки по центру */
-}
 
 .white-button {
+    text-align: center; /* Выравниваем текст кнопки по центру */
     display:block;
     padding: 12px 22px;
     background-color: #22C315;
@@ -182,6 +180,7 @@ iframe {
 [ Table ]*/
 table {
     width: 100%;
+    overflow-x: auto;
     background-color: #fff;
 }
 
@@ -269,4 +268,32 @@ td {
 
 .table100.ver2 .hov-column-head-ver2 {
     background-color: #484848;
+}
+
+/* Для разрешений между 1680px и 768px */
+@media (max-width: 1680px) {
+    .container-table100 {
+        padding: 15px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+}
+
+/* Для разрешений меньше 768px */
+@media (max-width: 768px) {
+    .container-table100 {
+        padding: 10px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 10px;
+    }
+    .column100 {
+        width: auto;
+        padding-left: 10px;
+    }
 }
