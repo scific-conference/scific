@@ -331,11 +331,13 @@ html {
     min-height: 80vh;
     padding-bottom: 60px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .section-heading {
     text-align: left;
     padding: 60px 0 40px 0;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .section-heading h2 {
@@ -360,6 +362,7 @@ html {
         -1px 1px 1px #FFFFFF,
         1px 1px 1px #FFFFFF;
     color: #22C315;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .section-heading .line-dec {
@@ -367,6 +370,7 @@ html {
     height: 3px;
     background-color: #22C315;
     margin: 20px 0;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .section-heading span {
@@ -374,6 +378,7 @@ html {
     font-size: 14px;
     color: #fff;
     letter-spacing: 1px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 /* Buttons */
@@ -423,26 +428,31 @@ button:hover {
     margin-bottom: 60px;
     padding-bottom: 60px;
     border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .left-image img,
 .right-image img {
     border-radius: 5px;
+    max-width: 100%;
 }
 
 .right-image-post h4,
 .left-image-post h4 {
     margin-top: 0px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .right-image-post p,
 .left-image-post p {
     margin-top: 20px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .right-image-post .white-button,
 .left-image-post .white-button {
     margin-top: 30px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 
@@ -515,6 +525,7 @@ button:hover {
     max-width: 100%;
     /* Добавляем максимальную ширину для изображения, чтобы оно не выходило за границы контейнера */
     filter: brightness(0.8);
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .text-on-picture {
@@ -604,6 +615,7 @@ section.contact-me {
     letter-spacing: 0.5px;
     padding-bottom: 20px;
     padding-top: 50px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .second-name {
@@ -612,6 +624,7 @@ section.contact-me {
     color: #fff;
     letter-spacing: 0.5px;
     padding-bottom: 15px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 .third-name {
@@ -620,6 +633,7 @@ section.contact-me {
     color: #fff;
     letter-spacing: 0.5px;
     padding-bottom: 10px;
+    transition: all 0.5s; /* Плавные переходы для адаптивности */
 }
 
 
@@ -636,6 +650,12 @@ section.contact-me {
         right: 5%;
         left: 30%;
     }
+
+    .destination-item>a .hover-content p {
+        font-size: 14px; /* Установите желаемый размер шрифта */
+        padding: 10px; /* Установите желаемый внутренний отступ */
+    }
+    
 }
 
 @media screen and (max-width: 1680px) and (min-width: 846px) {
@@ -653,32 +673,6 @@ section.contact-me {
         margin-top: 60px;
     }
 
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .destination-item {
-      width: 90%; /* Уменьшаем ширину элемента на половину */
-      margin: 0 auto; /* Центрируем элемент на экране */
-    }
-  
-    .destination-item > a .hover-content {
-      padding: 15px; /* Уменьшаем внутренний отступ в блоке hover-content */
-    }
-  
-    .destination-item h4 {
-      font-size: 12px; /* Уменьшаем размер шрифта для заголовка */
-    }
-  }
-  
-@media screen and (max-width: 1380px) and (min-width: 1180px) {
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -701,9 +695,9 @@ section.contact-me {
         margin-top: 25px;
     }
 
-    /* Уменьшаем размер текста в плавающем блоке */
     .destination-item>a .hover-content p {
-        font-size: 12px;
+        font-size: 8px; /* Установите желаемый размер шрифта */
+        padding: 8px; /* Установите желаемый внутренний отступ */
     }
 }
 
@@ -716,31 +710,12 @@ section.contact-me {
     .menu {
         width: 25%;
     }
-
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 1200px) and (min-width: 846px) {
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 1100px) and (min-width: 760px) {
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 8px;
-    }
 }
 
 #menu-toggle,
 #menu-close {
     display: none;
 }
-
 @media screen and (max-width: 845px) {
 
     #menu-toggle,
@@ -754,149 +729,84 @@ section.contact-me {
         transform: translateX(-100%) !important;
         transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
     }
 
-    .menu .image {
-        margin-top: 40px;
-    }
-
-    .menu .image img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .menu .author-content {
-        margin: 20px 0px 40px 0px;
-    }
-
-    .menu .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .menu.open {
-        display: inline-block;
+    .menu.visible {
         -webkit-transform: translateX(0) !important;
         transform: translateX(0) !important;
     }
 
-    .responsive-nav {
-        display: inline-block;
-    }
-
     .section {
-        width: 94%;
-        right: 3%;
-        left: 3%;
+        width: 90%;
+        left: 5%;
     }
 
-    .left-image-post img {
-        margin-bottom: 30px;
-    }
-
-    .right-image-post img {
-        margin-top: 30px;
+    .destination-item>a .hover-content p {
+        font-size: 8px; /* Установите желаемый размер шрифта */
+        padding: 6px; /* Установите желаемый внутренний отступ */
     }
 }
 
-/* Общие стили для мобильных устройств */
-@media screen and (max-width: 767px) {
-
-    /* Уменьшаем отступы между элементами */
-    .section {
-        padding: 20px;
+@media screen and (max-width: 845px) and (min-width: 480px) {
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
     }
 
-    /* Уменьшаем шрифты */
-    .section h2 {
-        font-size: 24px;
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
     }
 
-    /* Уменьшаем размер изображений */
-    .destination-item>a img {
-        max-width: 100%;
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        width: 100%;
     }
 
-    /* Перераспределяем блоки на мобильных устройствах */
-    .col-md-4 {
-        width: 50%;
-        margin-bottom: 20px;
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
     }
 
-    /* Уменьшаем размер текста в плавающем блоке */
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+
     .destination-item>a .hover-content p {
+        font-size: 8px; /* Установите желаемый размер шрифта */
+        padding: 4px; /* Установите желаемый внутренний отступ */
+    }
+}
+
+/* Адаптив для маленьких экранов */
+@media screen and (max-width: 300px) {
+    body {
         font-size: 12px;
     }
 
-    .destination-item h4 {
-        font-size: 8px; /* Уменьшаем размер шрифта для заголовка */
-      }
-}
-
-/* Дополнительные стили для контактной секции на мобильных устройствах */
-@media screen and (max-width: 767px) {
-    .main-name {
-        font-size: 18px;
-        padding-top: 20px;
+    .hidden-on-small-screens {
+        display: none;
     }
 
-    .second-name {
-        font-size: 16px;
-        padding-bottom: 10px;
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px;
     }
 
-    .third-name {
+    .main-nav li a {
         font-size: 14px;
-        padding-bottom: 10px;
-    }
-
-    /* Уменьшаем отступы у текста */
-    .right-text {
-        margin-top: 20px;
-    }
-
-    /* Уменьшаем размер изображения */
-    .left-image img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    /* Уменьшаем размер текста в плавающем блоке */
-    .destination-item>a .hover-content p {
-        font-size: 6px;
-    }
-
-    .destination-item h4 {
-        font-size: 7px; /* Уменьшаем размер шрифта для заголовка */
-        z-index: 88;
-      }
-}
-
-
-/* Adaptiv for screens with a max-width of 1400px */
-@media screen and (max-width: 1400px) {
-    .destination-item {
-        width: 80%; /* Устанавливаем ширину элемента в 48% на меньших экранах */
-        margin-right: 2%; /* Добавляем небольшой отступ между элементами */
-    }
-
-    .destination-item:nth-child(2n) {
-        margin-right: 0; /* Убираем отступ справа для каждого четного элемента, чтобы они стояли в ряд */
-    }
-
-    .destination-item > a img {
-        max-width: 100%; /* Сохраняем максимальную ширину изображения */
-    }
-
-    .destination-item h4 {
-        font-size: 10px; /* Уменьшаем размер заголовка */
-        text-align: center;
-    }
-
-    .destination-item > a .hover-content {
-        padding: 15px; /* Уменьшаем отступы внутри hover-content */
+        line-height: 1.5;
     }
 }
