@@ -747,6 +747,64 @@ section.contact-me {
         padding: 6px; /* Установите желаемый внутренний отступ */
     }
 }
+@media screen and (max-width: 845px) {
+
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }
+
+    .menu {
+        width: 320px;
+        -webkit-transform: translateX(-100%) !important;
+        transform: translateX(-100%) !important;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    }
+
+    .menu .image {
+        margin-top: 40px;
+    }
+
+    .menu .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .author-content {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0) !important;
+        transform: translateX(0) !important;
+    }
+
+    .responsive-nav {
+        display: inline-block;
+    }
+
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+
+    .right-image-post img {
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 845px) and (min-width: 480px) {
     .right-image-post h4,
