@@ -1,0 +1,725 @@
+/* Импорт стилей для шрифтов и иконок */
+/* @import url(fontawesome.css); */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+/* Стили для обертки страницы */
+#page-wraper {
+    background: #2d2b2b no-repeat center center fixed; /* Задний фон с изображением */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; /* Растягиваем фон на всю ширину и высоту окна браузера */
+    width: 100%;
+}
+
+/* Basic */
+
+/* Общие стили для элементов форм (input, select, textarea) и ссылок (a) */
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a {
+	color: #58d44f;
+    text-decoration: none;
+}
+
+a:hover {
+	color: rgb(8, 109, 39);
+	text-decoration: none;
+}
+
+.footer-copy{
+    text-align:center;
+}
+/* Стили для параграфов (p) и заголовков h4 */
+p {
+    text-align: justify;
+	letter-spacing: 0.5px;
+    line-height: 2em;
+    color: #fff;
+}
+
+.highlighted-text {
+    color: #22C315; /* Замените 'red' на желаемый цвет */
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #22C315;
+    letter-spacing: 0.5px;
+}
+
+/* Стили для изображений (img) */
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Обнуление стилей списка (ul) и элементов списка (li) */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+/* Общие стили для HTML-элементов */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Наследование свойства box-sizing для всех элементов */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Стили для элемента, очищающего обтекание (clearfix) */
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Общие стили для контейнера (container) */
+.container {
+    margin: 0 auto; /* Центрируем по горизонтали */
+}
+
+/* Стили для верхнего заголовка (top-header) */
+.top-header {
+	margin: 0;
+	padding: 0;
+}
+
+/* Стили для главной навигации (main-nav) */
+.main-nav {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.main-nav li:last-child a {
+    border-bottom: 1px solid #22c315;
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav li a {
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s; /* Плавное изменение стилей при наведении */
+    border-top: 1px solid #22c315;
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+    background: #fff;
+    color: #242021; /* Изменяем цвет текста и фона при наведении */
+}
+
+/* Sidebar Menu */
+
+.menu .image {
+    margin-top: 50px;
+}
+
+.menu .image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.menu .author-content {
+    margin: 20px 0px 40px 0px;
+}
+
+.menu .author-content h4 {
+    margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.menu .author-content span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #22C315;
+}
+
+.menu .social-network {
+    margin-top: 60px;
+}
+
+.menu .social-network ul li {
+    margin: 0 3px;
+}
+
+.menu .social-network ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(34, 195, 21, 0.5);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.menu .social-network ul li a:hover {
+    background-color: #fff;
+    color: #242021;
+}
+
+.menu .copyright-text {
+    position: relative;
+    margin-top: 60px;
+}
+
+.menu .copyright-text p {
+    border-top: 1px solid rgba(250, 250, 250, 0.1);
+    display: inline-block;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: 13px;
+}
+/* Добавляем белое подчеркивание для текста ссылки */
+.menu .copyright-text a {
+    z-index: 999;
+    text-decoration: underline;
+    color: white; /* Устанавливаем белый цвет текста ссылки */
+  }    
+
+.menu:before,
+.menu:after {
+    content: "";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    left: 8%;
+  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  -webkit-overflow-scrolling: touch;
+  background-color: #242021;
+  box-sizing: border-box;
+  height: 100vh;  
+  max-height: 100vh !important;
+  max-width: 80vw !important;
+  min-width: 45px !important;
+  outline: none;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 0;
+  position: fixed !important;
+  top: calc(0px);  
+  width: 22%;
+  will-change: transform;
+  z-index: 9999 !important;
+}
+
+.menu-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+#menu-toggle {
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #242021;
+    background-color: #fff;
+    width: 66px;
+    height: 66px;
+	line-height: 66px;
+    text-align: center;
+    display: inline-block;
+	font-size: 1.3em;
+}
+
+.menu-close {
+  cursor: pointer;
+}
+
+#menu-close {
+    cursor: pointer;
+    text-align: right;
+    color: #242021;
+    background-color: #fff;
+    width: 100%;
+    height: 66px;
+    text-align: center;
+    display: inline-block;
+    line-height: 66px;
+	font-size: 1.3em;
+}
+
+
+/* Section */
+
+.section {
+    color: #fff;
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 80vh;
+    padding-bottom: 60px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+
+.section-heading {
+    text-align: left;
+    padding: 60px 0 40px 0;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 700;
+    text-shadow: 
+		-0   -1px 1px #FFFFFF,
+		 0   -1px 1px #FFFFFF,
+		-0    1px 1px #FFFFFF,
+		 0    1px 1px #FFFFFF,
+		-1px -0   1px #FFFFFF,
+		 1px -0   1px #FFFFFF,
+		-1px  0   1px #FFFFFF,
+		 1px  0   1px #FFFFFF,
+		-1px -1px 1px #FFFFFF,
+		 1px -1px 1px #FFFFFF,
+		-1px  1px 1px #FFFFFF,
+		 1px  1px 1px #FFFFFF,
+		-1px -1px 1px #FFFFFF,
+		 1px -1px 1px #FFFFFF,
+		-1px  1px 1px #FFFFFF,
+		 1px  1px 1px #FFFFFF;
+    color: #22C315;
+}
+
+.section-heading .line-dec {
+    max-width: 500px;
+    height: 3px;
+    background-color: #22C315;
+    margin: 20px 0;
+}
+
+.section-heading span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+
+.white-button a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #22C315;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.white-button a:hover {
+    background-color: #fff;
+    color: #242021;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #242021;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    outline: none;
+    background-color: #fff;
+    color: #242021;
+}
+
+
+/* Left & Right Post */
+
+.right-image-post {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.left-image img,
+.right-image img {
+    border-radius: 5px;
+}
+
+.right-image-post h4,
+.left-image-post h4 {
+    margin-top: 0px;
+}
+
+.right-image-post p,
+.left-image-post p {
+    margin-top: 20px;
+}
+
+.right-image-post .white-button,
+.left-image-post .white-button {
+    margin-top: 30px;
+}
+
+
+/* Services */
+
+.my-services .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+.service-item h4 {
+    transition: all 0.5s;
+}
+
+.service-item p {
+    transition: all 0.5s;
+}
+
+.service-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.service-item .fa {
+	font-size: 72px;
+	padding: 20px 0;
+	transition: all 0.5s;
+}
+.service-item:hover .fa {
+	color: #000;
+}
+
+/* Work */
+.destination-item {
+	transition: all 0.4s;
+    position: relative;
+}
+
+.destination-item > a {
+	display: block;	
+    position: relative;
+}
+
+.destination-item > a img {
+    max-width: 100%; /* Добавляем максимальную ширину для изображения, чтобы оно не выходило за границы контейнера */
+    filter: brightness(0.8);
+}
+
+.text-on-picture{
+    text-align: center;
+}
+
+.destination-item > a .hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(23, 24, 23, 0.8);
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 30px;
+    opacity: 0;
+    transition: 0.4s all;
+    z-index: 2;
+}
+
+.destination-item > a::before { /* Псевдоэлемент для затемнения изображения */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Задаем затемнение */
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.4s; /* Добавляем переход для плавного появления */
+    z-index: 1; /* Установите более низкий z-index, чтобы изображение было под текстом */
+}
+.destination-item > a:hover .hover-content p {
+    color: #22C315; /* Установите желаемый зеленый цвет текста */
+}
+
+.destination-item > a:hover .hover-content {
+    opacity: 1;
+}
+.destination-item > a:hover::before {
+    opacity: 1; /* Показываем затемнение при наведении */
+}
+
+.destination-item > a h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    color: white;
+}
+
+.destination-item h4 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.destination-item > a:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact */
+section.contact-me {
+    border-bottom: none;
+}
+
+.main-name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #22C315;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.second-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+}
+
+.third-name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+}
+
+
+/* Adaptiv */
+
+@media screen and (max-width: 1680px) {
+    .menu {
+        left: 4%;
+    }
+
+    .section {
+        color: #fff;
+        width: 65%;
+        right: 5%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 846px) { 
+    .menu .social-network ul li a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .menu .social-network ul li {
+        margin: 0;
+    }
+
+    .menu .image {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        left: 0%;
+    }
+
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+
+}
+
+.menu .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 846px) {
+    .menu {
+        width: 25%;
+    }
+}
+
+#menu-toggle,
+#menu-close {
+    display: none;
+}  
+
+@media screen and (max-width: 845px) {        
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }    
+
+    .menu {        
+        width: 320px;
+        -webkit-transform: translateX(-100%) !important;
+        transform: translateX(-100%) !important;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    }
+
+    .menu .image {
+        margin-top: 40px;        
+    }
+
+    .menu .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .author-content {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0) !important;
+                transform: translateX(0) !important;
+    }
+
+    .responsive-nav {
+        display: inline-block;
+    }
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+    .right-image-post img {
+        margin-top: 30px;
+    }
+}
