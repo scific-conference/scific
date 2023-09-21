@@ -892,7 +892,8 @@ section.contact-me {
     }
 
     .destination-item h4 {
-        font-size: 16px; /* Уменьшаем размер заголовка */
+        font-size: 10px; /* Уменьшаем размер заголовка */
+        text-align: center;
     }
 
     .destination-item > a .hover-content {
