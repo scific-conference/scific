@@ -53,7 +53,6 @@ p {
 
 .highlighted-text {
     color: #22C315;
-    /* Замените 'red' на желаемый цвет */
 }
 
 h4 {
@@ -382,9 +381,12 @@ html {
 }
 
 /* Buttons */
+.white-button {
+    display: inline-block; /* Размещаем блоки в одной линии */
+    margin-right: 10px; /* Расстояние между кнопками */
+  }
 
 .white-button a {
-    display: inline-block;
     padding: 12px 22px;
     background-color: #22C315;
     color: #fff;
