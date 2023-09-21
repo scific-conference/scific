@@ -1,19 +1,22 @@
 /* Импорт стилей для шрифтов и иконок */
 /* @import url(fontawesome.css); */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
+
 /* Общие стили для всей страницы */
 body {
     font-family: 'Roboto', sans-serif;
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /* Стили для обертки страницы */
 #page-wraper {
-    background: #2d2b2b no-repeat center center fixed; /* Задний фон с изображением */
+    background: #2d2b2b no-repeat center center fixed;
+    /* Задний фон с изображением */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; /* Растягиваем фон на всю ширину и высоту окна браузера */
+    background-size: cover;
+    /* Растягиваем фон на всю ширину и высоту окна браузера */
     width: 100%;
 }
 
@@ -27,28 +30,30 @@ textarea {
 }
 
 a {
-	color: #58d44f;
+    color: #58d44f;
     text-decoration: none;
 }
 
 a:hover {
-	color: rgb(8, 109, 39);
-	text-decoration: none;
+    color: rgb(8, 109, 39);
+    text-decoration: none;
 }
 
-.footer-copy{
-    text-align:center;
+.footer-copy {
+    text-align: center;
 }
+
 /* Стили для параграфов (p) и заголовков h4 */
 p {
     text-align: justify;
-	letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
     line-height: 2em;
     color: #fff;
 }
 
 .highlighted-text {
-    color: #22C315; /* Замените 'red' на желаемый цвет */
+    color: #22C315;
+    /* Замените 'red' на желаемый цвет */
 }
 
 h4 {
@@ -108,18 +113,20 @@ html {
 
 /* Общие стили для контейнера (container) */
 .container {
-    margin: 0 auto; /* Центрируем по горизонтали */
+    margin: 0 auto;
+    /* Центрируем по горизонтали */
 }
 
 /* Стили для верхнего заголовка (top-header) */
 .top-header {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Стили для главной навигации (main-nav) */
 .main-nav {
-    text-align: center; /* Выравнивание текста по центру */
+    text-align: center;
+    /* Выравнивание текста по центру */
 }
 
 .main-nav li:last-child a {
@@ -138,14 +145,16 @@ html {
     font-weight: 700;
     color: #fff;
     width: 100%;
-    transition: all 0.5s; /* Плавное изменение стилей при наведении */
+    transition: all 0.5s;
+    /* Плавное изменение стилей при наведении */
     border-top: 1px solid #22c315;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
     background: #fff;
-    color: #242021; /* Изменяем цвет текста и фона при наведении */
+    color: #242021;
+    /* Изменяем цвет текста и фона при наведении */
 }
 
 /* Sidebar Menu */
@@ -167,7 +176,7 @@ html {
 
 .menu .author-content h4 {
     margin-bottom: 0px;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .menu .author-content span {
@@ -215,12 +224,14 @@ html {
     padding-top: 30px;
     font-size: 13px;
 }
+
 /* Добавляем белое подчеркивание для текста ссылки */
 .menu .copyright-text a {
     z-index: 999;
     text-decoration: underline;
-    color: white; /* Устанавливаем белый цвет текста ссылки */
-  }    
+    color: white;
+    /* Устанавливаем белый цвет текста ссылки */
+}
 
 .menu:before,
 .menu:after {
@@ -247,32 +258,32 @@ html {
 
 .menu {
     left: 8%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  background-color: #242021;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
-  outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  padding: 0;
-  position: fixed !important;
-  top: calc(0px);  
-  width: 22%;
-  will-change: transform;
-  z-index: 9999 !important;
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    -webkit-overflow-scrolling: touch;
+    background-color: #242021;
+    box-sizing: border-box;
+    height: 100vh;
+    max-height: 100vh !important;
+    max-width: 80vw !important;
+    min-width: 45px !important;
+    outline: none;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 0;
+    position: fixed !important;
+    top: calc(0px);
+    width: 22%;
+    will-change: transform;
+    z-index: 9999 !important;
 }
 
 .menu-toggle {
-  color: #fff;
-  cursor: pointer;
-  font-size: 25px;
-  position: fixed;
-  right: 25px;
-  top: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    right: 25px;
+    top: 25px;
 }
 
 #menu-toggle {
@@ -285,14 +296,14 @@ html {
     background-color: #fff;
     width: 66px;
     height: 66px;
-	line-height: 66px;
+    line-height: 66px;
     text-align: center;
     display: inline-block;
-	font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 .menu-close {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #menu-close {
@@ -305,7 +316,7 @@ html {
     text-align: center;
     display: inline-block;
     line-height: 66px;
-	font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 
@@ -331,23 +342,23 @@ html {
     font-size: 32px;
     line-height: 45px;
     font-weight: 700;
-    text-shadow: 
-		-0   -1px 1px #FFFFFF,
-		 0   -1px 1px #FFFFFF,
-		-0    1px 1px #FFFFFF,
-		 0    1px 1px #FFFFFF,
-		-1px -0   1px #FFFFFF,
-		 1px -0   1px #FFFFFF,
-		-1px  0   1px #FFFFFF,
-		 1px  0   1px #FFFFFF,
-		-1px -1px 1px #FFFFFF,
-		 1px -1px 1px #FFFFFF,
-		-1px  1px 1px #FFFFFF,
-		 1px  1px 1px #FFFFFF,
-		-1px -1px 1px #FFFFFF,
-		 1px -1px 1px #FFFFFF,
-		-1px  1px 1px #FFFFFF,
-		 1px  1px 1px #FFFFFF;
+    text-shadow:
+        -0 -1px 1px #FFFFFF,
+        0 -1px 1px #FFFFFF,
+        -0 1px 1px #FFFFFF,
+        0 1px 1px #FFFFFF,
+        -1px -0 1px #FFFFFF,
+        1px -0 1px #FFFFFF,
+        -1px 0 1px #FFFFFF,
+        1px 0 1px #FFFFFF,
+        -1px -1px 1px #FFFFFF,
+        1px -1px 1px #FFFFFF,
+        -1px 1px 1px #FFFFFF,
+        1px 1px 1px #FFFFFF,
+        -1px -1px 1px #FFFFFF,
+        1px -1px 1px #FFFFFF,
+        -1px 1px 1px #FFFFFF,
+        1px 1px 1px #FFFFFF;
     color: #22C315;
 }
 
@@ -480,35 +491,37 @@ button:hover {
 }
 
 .service-item .fa {
-	font-size: 72px;
-	padding: 20px 0;
-	transition: all 0.5s;
+    font-size: 72px;
+    padding: 20px 0;
+    transition: all 0.5s;
 }
+
 .service-item:hover .fa {
-	color: #000;
+    color: #000;
 }
 
 /* Work */
 .destination-item {
-	transition: all 0.4s;
+    transition: all 0.4s;
     position: relative;
 }
 
-.destination-item > a {
-	display: block;	
+.destination-item>a {
+    display: block;
     position: relative;
 }
 
-.destination-item > a img {
-    max-width: 100%; /* Добавляем максимальную ширину для изображения, чтобы оно не выходило за границы контейнера */
+.destination-item>a img {
+    max-width: 100%;
+    /* Добавляем максимальную ширину для изображения, чтобы оно не выходило за границы контейнера */
     filter: brightness(0.8);
 }
 
-.text-on-picture{
+.text-on-picture {
     text-align: center;
 }
 
-.destination-item > a .hover-content {
+.destination-item>a .hover-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -523,30 +536,39 @@ button:hover {
     z-index: 2;
 }
 
-.destination-item > a::before { /* Псевдоэлемент для затемнения изображения */
+.destination-item>a::before {
+    /* Псевдоэлемент для затемнения изображения */
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Задаем затемнение */
-    opacity: 0; /* Начальная непрозрачность */
-    transition: opacity 0.4s; /* Добавляем переход для плавного появления */
-    z-index: 1; /* Установите более низкий z-index, чтобы изображение было под текстом */
-}
-.destination-item > a:hover .hover-content p {
-    color: #22C315; /* Установите желаемый зеленый цвет текста */
+    background: rgba(0, 0, 0, 0.3);
+    /* Задаем затемнение */
+    opacity: 0;
+    /* Начальная непрозрачность */
+    transition: opacity 0.4s;
+    /* Добавляем переход для плавного появления */
+    z-index: 1;
+    /* Установите более низкий z-index, чтобы изображение было под текстом */
 }
 
-.destination-item > a:hover .hover-content {
+.destination-item>a:hover .hover-content p {
+    color: #22C315;
+    /* Установите желаемый зеленый цвет текста */
+}
+
+.destination-item>a:hover .hover-content {
     opacity: 1;
 }
-.destination-item > a:hover::before {
-    opacity: 1; /* Показываем затемнение при наведении */
+
+.destination-item>a:hover::before {
+    opacity: 1;
+    /* Показываем затемнение при наведении */
 }
 
-.destination-item > a h4 {
+.destination-item>a h4 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -557,6 +579,7 @@ button:hover {
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
     color: white;
+    z-index: 55;
 }
 
 .destination-item h4 {
@@ -565,7 +588,7 @@ button:hover {
     padding-bottom: 10px;
 }
 
-.destination-item > a:hover {
+.destination-item>a:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -574,7 +597,7 @@ section.contact-me {
     border-bottom: none;
 }
 
-.main-name{
+.main-name {
     font-size: 22px;
     font-weight: 700;
     color: #22C315;
@@ -583,7 +606,7 @@ section.contact-me {
     padding-top: 50px;
 }
 
-.second-name{
+.second-name {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
@@ -591,7 +614,7 @@ section.contact-me {
     padding-bottom: 15px;
 }
 
-.third-name{
+.third-name {
     font-size: 18px;
     font-weight: 400;
     color: #fff;
@@ -615,7 +638,7 @@ section.contact-me {
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width: 1680px) and (min-width: 846px) {
     .menu .social-network ul li a {
         width: 36px;
         height: 36px;
@@ -628,6 +651,33 @@ section.contact-me {
 
     .menu .image {
         margin-top: 60px;
+    }
+
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .destination-item {
+      width: 90%; /* Уменьшаем ширину элемента на половину */
+      margin: 0 auto; /* Центрируем элемент на экране */
+    }
+  
+    .destination-item > a .hover-content {
+      padding: 15px; /* Уменьшаем внутренний отступ в блоке hover-content */
+    }
+  
+    .destination-item h4 {
+      font-size: 12px; /* Уменьшаем размер шрифта для заголовка */
+    }
+  }
+  
+@media screen and (max-width: 1380px) and (min-width: 1180px) {
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 12px;
     }
 }
 
@@ -651,6 +701,10 @@ section.contact-me {
         margin-top: 25px;
     }
 
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 12px;
+    }
 }
 
 .menu .container {
@@ -662,20 +716,39 @@ section.contact-me {
     .menu {
         width: 25%;
     }
+
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 846px) {
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 760px) {
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 8px;
+    }
 }
 
 #menu-toggle,
 #menu-close {
     display: none;
-}  
+}
 
-@media screen and (max-width: 845px) {        
+@media screen and (max-width: 845px) {
+
     #menu-toggle,
     #menu-close {
         display: inline-block;
-    }    
+    }
 
-    .menu {        
+    .menu {
         width: 320px;
         -webkit-transform: translateX(-100%) !important;
         transform: translateX(-100%) !important;
@@ -685,7 +758,7 @@ section.contact-me {
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 40px;
     }
 
     .menu .image img {
@@ -705,21 +778,124 @@ section.contact-me {
     .menu.open {
         display: inline-block;
         -webkit-transform: translateX(0) !important;
-                transform: translateX(0) !important;
+        transform: translateX(0) !important;
     }
 
     .responsive-nav {
         display: inline-block;
     }
+
     .section {
         width: 94%;
         right: 3%;
         left: 3%;
     }
+
     .left-image-post img {
         margin-bottom: 30px;
     }
+
     .right-image-post img {
         margin-top: 30px;
+    }
+}
+
+/* Общие стили для мобильных устройств */
+@media screen and (max-width: 767px) {
+
+    /* Уменьшаем отступы между элементами */
+    .section {
+        padding: 20px;
+    }
+
+    /* Уменьшаем шрифты */
+    .section h2 {
+        font-size: 24px;
+    }
+
+    /* Уменьшаем размер изображений */
+    .destination-item>a img {
+        max-width: 100%;
+    }
+
+    /* Перераспределяем блоки на мобильных устройствах */
+    .col-md-4 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 12px;
+    }
+
+    .destination-item h4 {
+        font-size: 8px; /* Уменьшаем размер шрифта для заголовка */
+      }
+}
+
+/* Дополнительные стили для контактной секции на мобильных устройствах */
+@media screen and (max-width: 767px) {
+    .main-name {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .second-name {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .third-name {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    /* Уменьшаем отступы у текста */
+    .right-text {
+        margin-top: 20px;
+    }
+
+    /* Уменьшаем размер изображения */
+    .left-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Уменьшаем размер текста в плавающем блоке */
+    .destination-item>a .hover-content p {
+        font-size: 6px;
+    }
+
+    .destination-item h4 {
+        font-size: 7px; /* Уменьшаем размер шрифта для заголовка */
+        z-index: 88;
+      }
+}
+
+
+/* Adaptiv for screens with a max-width of 1400px */
+@media screen and (max-width: 1400px) {
+    .destination-item {
+        width: 80%; /* Устанавливаем ширину элемента в 48% на меньших экранах */
+        margin-right: 2%; /* Добавляем небольшой отступ между элементами */
+    }
+
+    .destination-item:nth-child(2n) {
+        margin-right: 0; /* Убираем отступ справа для каждого четного элемента, чтобы они стояли в ряд */
+    }
+
+    .destination-item > a img {
+        max-width: 100%; /* Сохраняем максимальную ширину изображения */
+    }
+
+    .destination-item h4 {
+        font-size: 16px; /* Уменьшаем размер заголовка */
+    }
+
+    .destination-item > a .hover-content {
+        padding: 15px; /* Уменьшаем отступы внутри hover-content */
     }
 }
