@@ -49,11 +49,9 @@ html {
 }
 
 /* Buttons */
-.white-button {
-    text-align: center; /* Выравниваем текст кнопки по центру */
-}
 
 .white-button {
+    text-align: center;
     display:block;
     padding: 12px 22px;
     background-color: #22C315;
@@ -297,4 +295,141 @@ td {
 .table100.ver2 .row100 td:hover {
     background-color: #57b846;
     color: #fff;
+}
+
+/* Для разрешений между 1680px и 768px */
+@media (max-width: 1680px) {
+    .container-table100 {
+        padding: 15px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-table100 {
+        padding: 10px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 10px;
+    }
+    .column100 {
+        width: auto;
+        padding-left: 10px;
+    }
+    .table100.ver2 th{
+        font-size: 15px;
+    }
+}
+
+/* Для разрешений меньше 768px */
+@media (max-width: 768px) {
+    .container-table100 {
+        padding: 8px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 10px;
+    }
+    .column100 {
+        width: auto;
+        padding-left: 10px;
+    }
+    .table100.ver2 th{
+        font-size: 12px;
+    }
+}
+
+/* Для разрешений меньше 660px */
+@media (max-width: 660px) {
+    .container-table100 {
+        padding: 6px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 8px;
+    }
+    .column100 {
+        width: auto;
+        padding-left: 8px;
+    }
+    .table100.ver2 th{
+        font-size: 10px;
+    }
+
+    .table100.ver2 td{
+        font-size: 10px;
+    }
+}
+
+/* Для разрешений меньше 570px */
+@media (max-width: 570px) {
+    .section-heading h2 {
+        font-size: 24px;
+    }
+    
+    .container-table100 {
+        padding: 2px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 2px;
+    }
+    .column100 {
+        width: auto;
+        padding-left: 2px;
+    }
+    .table100.ver2 th{
+        font-size: 10px;
+    }
+
+    .table100.ver2 td{
+        font-size: 10px;
+    }
+}
+
+/* Для разрешений меньше 470px */
+@media (max-width: 470px) {
+    .section-heading h2 {
+        font-size: 20px;
+    }
+    
+    .white-button {
+        font-size: 12px;
+    }
+    
+    .container-table100 {
+        padding: 2px;
+    }
+    .wrap-table100 {
+        width: 100%;
+    }
+    .column100.column1 {
+        width: auto;
+        padding-left: 2px;
+    }
+    .column100 {
+        width: auto;
+    }
+    .table100.ver2 th{
+        font-size: 10px;
+    }
+
+    .table100.ver2 td{
+        font-size: 10px;
+    }
 }
