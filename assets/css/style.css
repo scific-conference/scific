@@ -693,6 +693,7 @@ section.contact-me {
     .right-image-post .white-button,
     .left-image-post .white-button {
         margin-top: 25px;
+        margin-bottom: 30px;
     }
 
     .destination-item>a .hover-content p {
@@ -761,6 +762,7 @@ section.contact-me {
     .right-image-post .white-button,
     .left-image-post .white-button {
         margin-top: 25px;
+        margin-bottom: 30px;
     }
 }
 
@@ -776,30 +778,37 @@ section.contact-me {
 
     .right-image-post p,
     .left-image-post p {
-        margin-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .right-image-post .white-button,
     .left-image-post .white-button {
         margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     .destination-item>a .hover-content p {
-        font-size: 8px; /* Установите желаемый размер шрифта */
+        font-size: 6px; /* Установите желаемый размер шрифта */
         padding: 4px; /* Установите желаемый внутренний отступ */
     }
 }
 
 /* Адаптив для маленьких экранов */
 @media screen and (max-width: 300px) {
+    /* Применяйте свои стили для разрешения 300px и менее */
+
+    /* Пример: Уменьшение размера шрифта для всех текстовых элементов */
     body {
         font-size: 12px;
     }
 
+    /* Пример: Скрытие некоторых элементов, чтобы сэкономить место */
     .hidden-on-small-screens {
         display: none;
     }
 
+    /* Пример: Изменение стилей для навигационного меню */
     .main-nav li {
         display: block;
         margin-bottom: 10px;
@@ -808,5 +817,9 @@ section.contact-me {
     .main-nav li a {
         font-size: 14px;
         line-height: 1.5;
+    }
+
+    .destination-item>a .hover-content p {
+        font-size: 4px; /* Установите желаемый размер шрифта */
     }
 }
