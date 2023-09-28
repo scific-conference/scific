@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendarstyle.css">
+
+    <title>Table V03</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="section-heading">
+                <h2>Schedule from the Student Conference of Information, Functional and Cybersecurity (SCIFiC)</h2>
+                <a class="white-button" href="../../index.html">Back to the Home page</a>
+            </div>
+            <div class="wrap-table100">
+                <div class="table100 ver2 m-b-110">
+                    <table data-vertable="ver2">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" data-column="column1"></th>
+                                <th class="column100 column2" data-column="column2">Day one (November 30, 2023)</th>
+                                <th class="column100 column3" data-column="column3">Day two (December 1, 2023)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Registration</td>
+                                <td class="column100 column2" data-column="column2">14:45–15:00</td>
+                                <td class="column100 column3" data-column="column3">--</td>
+                            </tr>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Plenary session</td>
+                                <td class="column100 column2" data-column="column2">15:00–16:00</td>
+                                <td class="column100 column3" data-column="column3">15:00–16:00</td>
+                            </tr>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Work of the sections</td>
+                                <td class="column100 column2" data-column="column2">16:00–17:00</td>
+                                <td class="column100 column3" data-column="column3">16:00–17:00</td>
+                            </tr>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Break</td>
+                                <td class="column100 column2" data-column="column2">17:00 - 17:05</td>
+                                <td class="column100 column3" data-column="column3">17:00 - 17:05</td>
+                            </tr>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Work of the sections</td>
+                                <td class="column100 column2" data-column="column2">17:05–18:00</td>
+                                <td class="column100 column3" data-column="column3">17:05–17:45</td>
+                            </tr>
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Closing of the conference</td>
+                                <td class="column100 column2" data-column="column2">--</td>
+                                <td class="column100 column3" data-column="column3">17:45–18:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============================================================================================-->
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+
+    <script type="text/javascript">
+        (function ($) {
+            "use strict";
+            $('.column100').on('mouseover', function () {
+                var table1 = $(this).parent().parent().parent();
+                var table2 = $(this).parent().parent();
+                var verTable = $(table1).data('vertable') + "";
+                var column = $(this).data('column') + "";
+                $(table2).find("." + column).addClass('hov-column-' + verTable);
+                $(table1).find(".row100.head ." + column).addClass('hov-column-head-' + verTable);
+            });
+            $('.column100').on('mouseout', function () {
+                var table1 = $(this).parent().parent().parent();
+                var table2 = $(this).parent().parent();
+                var verTable = $(table1).data('vertable') + "";
+                var column = $(this).data('column') + "";
+                $(table2).find("." + column).removeClass('hov-column-' + verTable);
+                $(table1).find(".row100.head ." + column).removeClass('hov-column-head-' + verTable);
+            });
+        })(jQuery);</script>
+</body>
+
+</html>
