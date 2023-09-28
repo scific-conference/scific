@@ -905,11 +905,11 @@ section.contact-me {
 
 @media screen and (max-width: 500px) {
 .language-selector{
-    bottom: 21%;
+    bottom: 20%;
 }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .language-selector{
         bottom: 18%;
     }
