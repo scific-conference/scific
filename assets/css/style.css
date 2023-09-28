@@ -224,6 +224,34 @@ html {
     font-size: 13px;
 }
 
+/*Change language*/
+.language-selector {
+    position: fixed;
+    bottom: 18%; /* Переместили флаги вниз */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; /* Выравниваем по вертикали по центру */
+    padding: 10px; /* Добавляем отступы для флагов */
+    border-radius: 5px; /* Добавляем скругление углов для фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень для фона */
+}
+
+.language-icon {
+    margin-left: 10px;
+    /* Adjust the spacing between icons */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #333;
+    /* Change color to match your design */
+}
+
+.language-icon img {
+    width: 25px;
+    height: 75%;
+}
+
 /* Добавляем белое подчеркивание для текста ссылки */
 .menu .copyright-text a {
     z-index: 999;
@@ -675,6 +703,10 @@ section.contact-me {
         margin-top: 60px;
     }
 
+    .language-selector{
+        bottom: 22%;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -701,6 +733,10 @@ section.contact-me {
     .destination-item>a .hover-content p {
         font-size: 8px; /* Установите желаемый размер шрифта */
         padding: 8px; /* Установите желаемый внутренний отступ */
+    }
+
+    .language-selector{
+        bottom: 19%;
     }
 }
 
@@ -747,6 +783,10 @@ section.contact-me {
     .destination-item>a .hover-content p {
         font-size: 8px; /* Установите желаемый размер шрифта */
         padding: 6px; /* Установите желаемый внутренний отступ */
+    }
+
+    .language-selector{
+        bottom: 21%;
     }
 }
 @media screen and (max-width: 845px) {
@@ -824,6 +864,7 @@ section.contact-me {
         margin-top: 25px;
         margin-bottom: 30px;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -856,7 +897,23 @@ section.contact-me {
     .destination-item>a h4 {
         font-size: 10px; /* Установите желаемый размер шрифта */
     }
+
+    .language-selector{
+        bottom: 18%;
+    }
 }
+
+@media screen and (max-width: 500px) {
+.language-selector{
+    bottom: 21%;
+}
+}
+
+@media screen and (max-width: 390px) {
+    .language-selector{
+        bottom: 18%;
+    }
+    }
 
 /* Адаптив для маленьких экранов */
 @media screen and (max-width: 300px) {
@@ -885,5 +942,9 @@ section.contact-me {
 
     .destination-item>a .hover-content p {
         font-size: 4px; /* Установите желаемый размер шрифта */
+    }
+
+    .language-selector{
+        bottom: 17%;
     }
 }
