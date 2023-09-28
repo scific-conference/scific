@@ -905,13 +905,13 @@ section.contact-me {
 
 @media screen and (max-width: 500px) {
 .language-selector{
-    bottom: 20%;
+    bottom: 18%;
 }
 }
 
 @media screen and (max-width: 400px) {
     .language-selector{
-        bottom: 18%;
+        bottom: 16%;
     }
     }
 
