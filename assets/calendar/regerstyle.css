@@ -241,7 +241,7 @@ td {
 .row100.head th {
     padding-top: 24px;
     padding-bottom: 20px;
-    z-index:10;
+    z-index:1;
 }
 
 .row100 td {
@@ -253,7 +253,7 @@ td {
     padding-top: 18px;
     padding-bottom: 14px;
     background-color: #808080;
-    z-index:20;
+    z-index:99;
 }
 
 /*==================================================================
