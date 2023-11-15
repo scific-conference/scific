@@ -367,15 +367,15 @@ html {
     left: 35%;
     position: relative;
     min-height: 80vh;
-    padding-bottom: 60px;
+    padding-bottom: 30px; /* Уменьшите отступ снизу с 60px до 30px */
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
-    transition: all 0.5s; /* Плавные переходы для адаптивности */
+    transition: all 0.5s;
 }
 
 .section-heading {
     text-align: left;
-    padding: 60px 0 40px 0;
-    transition: all 0.5s; /* Плавные переходы для адаптивности */
+    padding: 60px 0 20px 0; /* Уменьшите отступ снизу с 40px до 20px */
+    transition: all 0.5s;
 }
 
 .section-heading h2 {
