@@ -167,7 +167,7 @@ iframe {
 }
 
 .container-table100 {
-    width: 100%;
+    width: 100vh;
     min-height: 100vh;
     background: #2d2b2b;
     display: -webkit-box;
