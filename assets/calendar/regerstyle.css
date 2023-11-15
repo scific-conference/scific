@@ -258,6 +258,22 @@ td {
     z-index:99;
 }
 
+.row100.mid1 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    font-size: 17px;
+    background-color: #76c76c;
+    z-index:99;
+}
+
+.row100.mid2 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    font-size: 17px;
+    background-color: #47853f;
+    z-index:99;
+}
+
 /*==================================================================
 [ Ver2 ]*/
 .table100.ver2 td {
