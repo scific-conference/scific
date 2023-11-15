@@ -247,9 +247,10 @@ td {
 .row100 td {
     padding-top: 18px;
     padding-bottom: 14px;
+    z-index:1;
 }
 
-.row100.mid th {
+.row100.mid td {
     padding-top: 18px;
     padding-bottom: 14px;
     background-color: #808080;
