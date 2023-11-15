@@ -474,6 +474,7 @@ button:hover {
 .three-image img {
   max-width: 100%;
   height: auto;
+  width: 30%;
 }
 
 .right-image-post h4,
