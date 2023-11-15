@@ -345,6 +345,20 @@ html {
     font-size: 1.3em;
 }
 
+.module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.module img {
+    width: 100%;
+    max-width: 200px; /* Установите желаемую максимальную ширину */
+    height: auto;
+    margin-bottom: 10px; /* Расстояние между изображениями */
+}
+
+
 
 /* Section */
 
