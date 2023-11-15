@@ -465,17 +465,6 @@ button:hover {
     border-radius: 5px;
     max-width: 100%;
 }
-.three-image {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.three-image img {
-  max-width: 100%;
-  height: auto;
-  width: 30%;
-}
 
 .right-image-post h4,
 .left-image-post h4 {
