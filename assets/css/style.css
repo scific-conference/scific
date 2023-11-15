@@ -371,7 +371,7 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 80vh;
+    min-height: auto;
     padding-bottom: 30px; /* Уменьшите отступ снизу с 60px до 30px */
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
     transition: all 0.5s;
