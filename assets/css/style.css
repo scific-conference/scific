@@ -349,14 +349,19 @@ html {
 .module {
     text-align: center;
 }
-
 .module img {
     display: inline-block;
     width: 100%;
     max-width: 100%; /* Используйте 100%, чтобы изображение не превышало ширину блока */
     height: auto;
 }
-
+.module.destination-item {
+    margin-bottom: 15px; /* Уменьшите отступ между изображениями */
+}
+.module.destination-item img {
+    display: block;
+    margin: 0 auto;
+}
 
 /* Section */
 
