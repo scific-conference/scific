@@ -282,6 +282,7 @@ td {
     color: #000000;
     line-height: 1.4;
     text-align: center;
+    vertical-align: middle;
 }
 
 .table100.ver2 th {
@@ -292,6 +293,7 @@ td {
     text-transform: uppercase;
     background-color: #000000;
     text-align: center;
+    vertical-align: middle;
 }
 
 .table100.ver2 .row100:hover td {
