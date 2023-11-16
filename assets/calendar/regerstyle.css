@@ -1,14 +1,6 @@
  /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
-}
-
-@font-face {
-    font-family: Montserrat-Medium;
-    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -277,7 +269,7 @@ td {
 /*==================================================================
 [ Ver2 ]*/
 .table100.ver2 td {
-    font-family: Montserrat-Regular;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #000000;
     line-height: 1.4;
@@ -286,7 +278,7 @@ td {
 }
 
 .table100.ver2 th {
-    font-family: Montserrat-Medium;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #fff;
     line-height: 1.0;
@@ -322,14 +314,14 @@ td {
 }
 
 .table100.ver2 td {
-    font-family: Montserrat-Regular;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #000000;
     line-height: 1.4;
 }
 
 .table100.ver2 th {
-    font-family: Montserrat-Medium;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #fff;
     line-height: 1.0;
