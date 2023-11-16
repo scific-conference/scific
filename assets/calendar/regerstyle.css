@@ -290,12 +290,10 @@ td {
 
 .table100.ver2 .row100:hover td {
     background-color: #bef1a7;
-    color: #fff;
 }
 /*
 .table100.ver2 .hov-column-ver2 {
     background-color: #6bda37;
-    color: #fff;
 }
 */
 .table100.ver2 .hov-column-head-ver2 {
@@ -304,7 +302,6 @@ td {
 
 .table100.ver2 .row100 td:hover {
     background-color: #25ad0a;
-    color: #fff;
 }
 
 /*==================================================================
@@ -331,12 +328,10 @@ td {
 
 .table100.ver2 .row100:hover td {
     background-color: #bef1a7;
-    color: #fff;
 }
 /*
 .table100.ver2 .hov-column-ver2 {
     background-color: #6bda37;
-    color: #fff;
 }
 */
 .table100.ver2 .hov-column-head-ver2 {
@@ -345,7 +340,6 @@ td {
 
 .table100.ver2 .row100 td:hover {
     background-color: #25ad0a;
-    color: #000000;
 }
 
 /* Для разрешений между 1680px и 768px */
