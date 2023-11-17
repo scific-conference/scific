@@ -236,11 +236,11 @@ td {
 .table100.ver2 .hov-column-ver2 {
     background-color: #83d160;
 }
-
+/*
 .table100.ver2 .hov-column-head-ver2 {
     background-color: #484848;
 }
-
+*/
 .table100.ver2 .row100 td:hover {
     background-color: #57b846;
 }
@@ -274,11 +274,11 @@ td {
 .table100.ver2 .hov-column-ver2 {
     background-color: #83d160;
 }
-
+/*
 .table100.ver2 .hov-column-head-ver2 {
     background-color: #484848;
 }
-
+*/
 .table100.ver2 .row100 td:hover {
     background-color: #57b846;
 }
