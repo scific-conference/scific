@@ -558,7 +558,7 @@ button:hover {
 
 .separator {
   border: 0;
-  height: 1px;
+  height: 3px;
   background-color: #fff; /* Серый цвет линии */
   margin: 20px 0; /* Отступы сверху и снизу */
 }
