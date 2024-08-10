@@ -556,6 +556,13 @@ button:hover {
     color: #000;
 }
 
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; /* Серый цвет линии */
+  margin: 20px 0; /* Отступы сверху и снизу */
+}
+
 /* Work */
 .destination-item {
     transition: all 0.4s;
