@@ -559,7 +559,7 @@ button:hover {
 .separator {
   border: 0;
   height: 1px;
-  background-color: #ccc; /* Серый цвет линии */
+  background-color: #fff; /* Серый цвет линии */
   margin: 20px 0; /* Отступы сверху и снизу */
 }
 
