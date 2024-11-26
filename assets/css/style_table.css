@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    word-wrap: break-word; /* для переноса текста */
+    text-align: left; /* выравнивание текста */
+}
+
+thead th {
+    background-color: #22C315;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Обёртка для горизонтальной прокрутки */
+.table-responsive {
+    overflow-x: auto;
+}
